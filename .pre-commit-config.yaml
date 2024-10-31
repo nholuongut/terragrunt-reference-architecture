@@ -1,0 +1,11 @@
+repos:
+  - repo: git://github.com/nholuongut/terraform-pre-commit
+    rev: v1.30.0
+    hooks:
+      - id: terraform_fmt
+      - id: terragrunt_fmt
+      - id: terraform_docs
+  - repo: git://nholuongut/pre-commit-hooks
+    rev: v2.5.0
+    hooks:
+      - id: check-merge-conflict
